@@ -27,7 +27,7 @@ This project will involve:
 
 ### Prerequisites
 
-1. Install [nix: the package manager](https://nixos.org/download/) into your shell environment
+1. Install [nix: the package manager](https://nixos.org/download/) into your environment
 2. Enable [Flakes](https://nixos.wiki/wiki/Flakes)
 3. Run `nix-shell` in your terminal
 

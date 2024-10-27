@@ -3,4 +3,5 @@
 data/*.csv
 mlruns/
 .envrc
+./.envrc
 

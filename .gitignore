@@ -1,0 +1,7 @@
+.direnv
+.venv
+data/*.csv
+mlruns/
+.envrc
+./.envrc
+

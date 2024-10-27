@@ -29,14 +29,14 @@ This project will involve:
 
 1. Install [nix: the package manager](https://nixos.org/download/) into your shell environment
 2. Enable [Flakes](https://nixos.wiki/wiki/Flakes)
-3. Run `nix-shell` in your terminal
+3. Run `nix develop` in your terminal (or setup `nix-direnv`)
 
 ### Creating The Dataset
 
 This repository does not contain the dataset used to train and evaluate this hepb prediction model. To build the data locally (requires an internet connection), run
 
 ```bash
-python data/create_dataset.py
+Rscript data/create_dataset.R
 ```
 
 ### Training Models

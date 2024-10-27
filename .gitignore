@@ -2,4 +2,5 @@
 .venv
 data/*.csv
 mlruns/
+.envrc
 

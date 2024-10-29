@@ -27,6 +27,7 @@
                                                           pytorch
                                                           mlflow
                                                         ]))
+                                                vhs
                                           ];
                                           };
       }

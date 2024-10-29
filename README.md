@@ -15,12 +15,10 @@ The objective of this project is to analyze a provided HBV dataset to uncover ke
 ### Proposed Solution
 This project will involve:
 - Preparing and cleaning the dataset to resolve any inconsistencies or missing values.
-- Performing exploratory data analysis (EDA) to identify and visualize important trends, such as demographic distributions, changes in viral load, and treatment outcomes.
-- Generating clear, concise visualizations that present the findings in an accessible manner.
+- Generating clear, concise metrics that present the findings in an accessible manner.
 
 ### Expected Outcomes
 - A well-prepared HBV dataset suitable for analysis.
-- Key insights into patient demographics, viral load patterns, and treatment efficacy through data visualizations.
 - A summary of findings that can provide a basis for further analysis or inform future HBV-related research.
 
 ## Getting Started
@@ -41,9 +39,11 @@ Rscript data/create_dataset.R
 
 ### Training Models
 
-To train the model, ensure the dataset is built and Run
+To train a model, ensure the dataset is built and run
 ```bash
-python models/train_model.py
+python python src/0_build_negative_model.py 
 ```
 
-### Viewing Results
+### Example
+
+![tape of overview thru readme](./docs/tapes/run_model.gif)

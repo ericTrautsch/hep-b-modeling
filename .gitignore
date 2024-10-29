@@ -4,5 +4,5 @@ data/*.csv
 mlruns/
 .envrc
 ./.envrc
-**/__pycache__/**
+__pycache__/
 

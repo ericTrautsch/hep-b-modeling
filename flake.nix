@@ -21,6 +21,13 @@
                                                 rPackages.dplyr
                                                 rPackages.foreign
                                                 pandoc
+                                                (python311.withPackages (ps: with ps; [
+                                                          numpy
+                                                          pandas
+                                                          scikit-learn
+                                                          pytorch
+                                                          mlflow
+                                                        ]))
                                           ];
                                           };
       }

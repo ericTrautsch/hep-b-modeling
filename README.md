@@ -6,7 +6,7 @@
 Hepatitis B virus (HBV) remains a major global health issue, affecting millions worldwide. Data-driven analysis plays a critical role in understanding patterns of disease progression, treatment responses, and patient outcomes, which can ultimately guide more effective healthcare strategies.
 
 ### Objective
-The objective of this project is to analyze a provided HBV dataset to uncover key trends related to patient demographics, viral load progression, and treatment outcomes. By applying efficient data exploration techniques, the goal is to produce actionable insights that can enhance understanding of HBV-related factors.
+The objective of this project is to analyze a provided HBV dataset to uncover key trends related to patient demographics, viral load progression, and treatment outcomes. By applying efficient data exploration techniques, the goal is to produce actionable insights that can enhance understanding of HBV-related factors. `HEQ010` is the response value. Assumption has been made that prediction is aiming to predict positive cases of HepB, so in this case we're treating 1 = Yes, 0 = No, Refused, Don't Know, or Missing values.
 
 ### Key Challenges
 - **Data Quality:** Handling potential inconsistencies or missing data entries to ensure reliable analysis.
@@ -42,7 +42,6 @@ Rscript data/create_dataset.R
 ### Training Models
 
 To train the model, ensure the dataset is built and Run
-
 ```bash
 python models/train_model.py
 ```

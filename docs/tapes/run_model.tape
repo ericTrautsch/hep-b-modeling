@@ -60,7 +60,8 @@ Output run_model.gif
 Require echo
 
 Set Shell "bash"
-Set FontSize 32
+Set FontSize 20
+Set FontFamily "Fira Code"
 Set Width 1200
 Set Height 600
 
@@ -69,14 +70,10 @@ Type "cd ../.. && clear" Enter
 Sleep 1s
 
 Show
-Type "nix develop" Sleep 500ms  Enter
+Type "Rscript data/create_dataset.R" Sleep 500ms  Enter
 
-Sleep 4s
-
-Type "Rscript data/create_dataset.py" Sleep 500ms  Enter
-
-Sleep 20s
+Sleep 10s
 
 Type "python src/0_build_negative_model.py" Sleep 500ms Enter
 
-Sleep 45s
+Sleep 20s

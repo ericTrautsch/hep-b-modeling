@@ -1,13 +1,15 @@
 import pandas as pd
 
 # Load each dataset and drop 'Unnamed: 0' if present
-health_ins = pd.read_csv("./HealthIns.csv").drop(
+health_ins = pd.read_csv("../data/HealthIns.csv").drop(
     columns=["Unnamed: 0"], errors="ignore"
 )
-med_con = pd.read_csv("./MedCon.csv").drop(columns=["Unnamed: 0"], errors="ignore")
-immuno = pd.read_csv("./Immuno.csv").drop(columns=["Unnamed: 0"], errors="ignore")
-hep_q = pd.read_csv("./HepQ.csv").drop(columns=["Unnamed: 0"], errors="ignore")
-demo = pd.read_csv("./Demo.csv").drop(columns=["Unnamed: 0"], errors="ignore")
+med_con = pd.read_csv("../data/MedCon.csv").drop(
+    columns=["Unnamed: 0"], errors="ignore"
+)
+immuno = pd.read_csv("../data/Immuno.csv").drop(columns=["Unnamed: 0"], errors="ignore")
+hep_q = pd.read_csv("../data/HepQ.csv").drop(columns=["Unnamed: 0"], errors="ignore")
+demo = pd.read_csv("../data/Demo.csv").drop(columns=["Unnamed: 0"], errors="ignore")
 
 health_ins["SEQN"] = health_ins["SEQN"].astype(int)
 med_con["SEQN"] = med_con["SEQN"].astype(int)
